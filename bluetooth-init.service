@@ -1,0 +1,9 @@
+[Unit]
+Description=Cubietruck Bluetooth Initialization
+
+[Service]
+Type=forking
+ExecStart=/usr/local/bin/bluetooth-init.sh
+
+[Install]
+WantedBy=multi-user.target 
